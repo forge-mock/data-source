@@ -22,4 +22,4 @@ docker compose up
 
 ## Run the project
 
-1. Try to connect to https://localhost:5432/:
+1. Connect to 5432 port using the DB IDE or CLI.
