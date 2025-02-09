@@ -1,4 +1,4 @@
-name: data-source
+name: data_source
 
 services:
   postgresql:
