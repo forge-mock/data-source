@@ -1,0 +1,17 @@
+name: data_source
+
+services:
+  postgresql:
+    image: postgres:17.2
+    container_name: postgresql
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - postgresql_data:/var/lib/postgresql/data
+
+volumes:
+  postgresql_data:
